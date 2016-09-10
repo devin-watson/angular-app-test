@@ -1,0 +1,22 @@
+body{
+	font-family: $bodyFont;
+	color: black;
+	background-color: $bgColor;
+	-webkit-font-smoothing: antialiased;
+
+	.app{
+		background-color: $white;
+	}
+}
+
+#{headings()} {
+	color: $hColor;
+	line-height: 1.1em;
+	font-weight: 100;
+}
+
+p{
+	color: $pColor;
+	line-height: 1.6em;
+	text-align: left;
+}

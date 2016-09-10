@@ -1,0 +1,27 @@
+#installs{
+	padding: 30px;
+	@include display-flex();
+	@include flex-direction(column);
+	.install-number{
+		@include display-flex();
+		@include flex-direction(row);
+		@include align-items(center);
+		@include justify-content(space-between);
+		h3 {
+			text-transform: uppercase;
+			font-size: .9em;
+		}
+		.likes{
+			span{
+				font-size: .8em;
+				color: $lightGray;
+				margin-right: 8px;
+			}
+			img{
+			}
+		}	
+	}
+	p {
+			font-size: .8em;
+	}
+}

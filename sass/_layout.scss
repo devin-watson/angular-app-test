@@ -1,0 +1,18 @@
+body{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	@include display-flex();
+	@include align-items(center);
+	@include justify-content(center);
+	border: 3px solid #264625;
+
+	.app{
+		@include align-self(center);
+		width: 300px;
+		max-height: 100%;
+		border-radius: 5px;
+	}
+}

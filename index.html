@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title>Add-ons</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="full-height" ng-app="app">
+	<section class="app">
+		<article id="addons">
+		
+			<div class="statusCheck">
+				<span id="checkMark">✓</span>
+			</div>
+
+			<h2 id="addon-head">Add-ons</h2>
+			<p id="addon-description">A collection of add-ons to supercharge your account such as Dropbox, Google Drive + more.</p>
+			
+			<div id="slider" ng-app>
+			  <div ng-controller="ButtonCtrl" class="button-wrap">
+			  <button id="btn" class="enabledButton" ng-click="enableIt()">
+			  {{name}}
+			  </button>
+			  </div>
+			</div>
+
+		</article>
+
+		<article id="installs">
+			<div class="install-number">
+				<h3>Number of Installs</h3>
+				<div class="likes" ng-controller="CounterCtrl">
+					<span>{{count}}</span><img src="img/like.png" ng-click="increment()">
+				</div>
+			</div>
+			<p>Bacon ipsum dolor amet landjaeger alcatra short loin, sirloin tenderloin swine beef frankfurter brisket.</p>
+		</article>
+	</section>
+		<script src="lib/angular.js"></script>
+		<script src="js/app.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
+
+</body>
+</html>
