@@ -40,10 +40,13 @@ body .app {
   align-self: center;
   width: 300px;
   max-height: 100%;
-  border-radius: 5px;
 }
 
-#addons {
+.addons {
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
   padding: 30px;
   box-shadow: 0 15px 7.5px -7.5px #f9fbfc;
   display: -webkit-flex;
@@ -51,7 +54,7 @@ body .app {
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-#addons .statusCheck {
+.addons .statusCheck {
   width: 50px;
   height: 50px;
   border: 1px solid #5de4f0;
@@ -65,7 +68,11 @@ body .app {
   -webkit-justify-content: center;
   justify-content: center;
 }
-#addons .statusCheck span {
+.addons .statusCheck span {
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
   width: 25px;
   height: 25px;
   display: -webkit-flex;
@@ -78,19 +85,39 @@ body .app {
   border-radius: 100%;
   color: #00c1ff;
 }
-#addons #slider {
+.addons .addon-head {
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.addons .addon-description {
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.addons .slider {
   width: 250px;
   height: 45px;
   background-color: #f9fbfc;
   border: 6px solid #f9fbfc;
   border-radius: 25px;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-align-self: "center";
   align-self: "center";
 }
-#addons #slider .button-wrap {
+.addons .slider .button-wrap {
   position: relative;
 }
-#addons #slider .button-wrap .enabledButton {
+.addons .slider .button-wrap .enabledButton {
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
   position: absolute;
   width: 120px;
   height: 45px;
@@ -103,21 +130,28 @@ body .app {
   font-size: .8em;
   font-weight: bold;
 }
-#addons #slider .button-wrap .enabledButton:focus {
+.addons .slider .button-wrap .enabledButton:focus {
   outline: none;
 }
-#addons #slider .button-wrap .enabledButton:active {
+.addons .slider .button-wrap .enabledButton:active {
   outline: none;
 }
 
-#installs {
+.installs {
   padding: 30px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-#installs .install-number {
+.installs:before, .installs:after {
+  content: '';
+  display: table;
+}
+.installs:after {
+  clear: both;
+}
+.installs .install-number {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -127,16 +161,16 @@ body .app {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-#installs .install-number h3 {
+.installs .install-number h3 {
   text-transform: uppercase;
   font-size: .9em;
 }
-#installs .install-number .likes span {
+.installs .install-number .likes span {
   font-size: .8em;
   color: #a4a4a4;
   margin-right: 8px;
 }
-#installs p {
+.installs p {
   font-size: .8em;
 }
 

@@ -1,5 +1,6 @@
 
-#addons{
+.addons{
+	@include transition(1s);
 	padding: 30px;
 	box-shadow: 0 15px 7.5px -7.5px $lightestGray;
 	@include display-flex();
@@ -14,6 +15,7 @@
 		@include align-items(center);
 		@include justify-content(center);
 		span{
+			@include transition(1s);
 			width: 25px;
 			height: 25px;
 			@include display-flex();
@@ -22,36 +24,44 @@
 			border: 1px solid $blue;
 			border-radius: 100%;
 			color: $blue;
-		}
-	}
-	#slider{
+		}//span
+	}//.statusCheck
+	.addon-head{
+		@include transition(1s);
+	}//.addon-head
+	.addon-description{
+		@include transition(1s);
+	}//addon-description
+	.slider{
 		width: 250px;
 		height: 45px;
 		background-color: $lightestGray;
 		border: 6px solid $lightestGray;
 		border-radius: 25px;
+		@include transition(1s);
 		@include align-self("center");
 		.button-wrap{
 			position: relative;
 			.enabledButton {
-			  position: absolute;
-			  width: 120px;
-			  height: 45px;
-			  left: 0px;
-			  color: $white;
-			  background-color: $darkturqoise;
-			  box-shadow: none;
-			  border: none;
-			  border-radius: 25px;
-			  font-size: .8em;
-			  font-weight: bold;
-			  &:focus{
-			  	outline: none;
-			  }
-			  &:active{
-			  	outline: none;
-			  }
-			}
-		}
-	}
-}
+				@include transition(1s);
+			  	position: absolute;
+				width: 120px;
+				height: 45px;
+				left: 0px;
+				color: $white;
+				background-color: $darkturqoise;
+				box-shadow: none;
+				border: none;
+				border-radius: 25px;
+				font-size: .8em;
+				font-weight: bold;
+				&:focus{
+					outline: none;
+				}//.enabledButton:focus
+				&:active{
+				  	outline: none;
+				}//.enabledButton:active
+			}//.enabledButton
+		}//.button-wrap
+	}//.slider
+}//.addons

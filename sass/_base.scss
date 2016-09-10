@@ -6,17 +6,17 @@ body{
 
 	.app{
 		background-color: $white;
-	}
-}
+	}//.app
+}//body
 
 #{headings()} {
 	color: $hColor;
 	line-height: 1.1em;
 	font-weight: 100;
-}
+}//headings
 
 p{
 	color: $pColor;
 	line-height: 1.6em;
 	text-align: left;
-}
+}//p

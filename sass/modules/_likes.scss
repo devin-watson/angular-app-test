@@ -1,4 +1,5 @@
-#installs{
+.installs{
+	@include clearfix();
 	padding: 30px;
 	@include display-flex();
 	@include flex-direction(column);
@@ -10,18 +11,16 @@
 		h3 {
 			text-transform: uppercase;
 			font-size: .9em;
-		}
+		}//h3
 		.likes{
 			span{
 				font-size: .8em;
 				color: $lightGray;
 				margin-right: 8px;
-			}
-			img{
-			}
-		}	
-	}
+			}//span
+		}//.likes	
+	}//.install-number
 	p {
-			font-size: .8em;
-	}
-}
+		font-size: .8em;
+	}//p
+}//#installs
