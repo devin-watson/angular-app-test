@@ -170,6 +170,9 @@ body .app {
   color: #a4a4a4;
   margin-right: 8px;
 }
+.installs .install-number .likes img {
+  cursor: pointer;
+}
 .installs p {
   font-size: .8em;
 }
