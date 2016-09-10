@@ -8,11 +8,8 @@ myApp.controller("ButtonCtrl", function ButtonCtrl($scope) {
         if ($scope.name === "ENABLE") {
             $scope.name = "ENABLED";
 
-            if($scope.count > 120) {
-                $scope.count = $scope.count;
-            } else {
-                $scope.count += 1;
-            }
+            $scope.count += 1;
+        
 
             $scope.btnStyle = {
                 "left": "130px",
@@ -38,6 +35,8 @@ myApp.controller("ButtonCtrl", function ButtonCtrl($scope) {
             };
         } else {
             $scope.name = "ENABLE";
+
+            $scope.count -= 1;
 
             $scope.btnStyle = {
                 "right": "130px",
