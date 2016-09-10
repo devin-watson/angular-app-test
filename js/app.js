@@ -2,11 +2,14 @@ var myApp = angular.module("myApp", []);
 
 myApp.controller("ButtonCtrl", function ButtonCtrl($scope) {
     $scope.name = "ENABLE";
-
+    $scope.count = 120;
     $scope.enableIt = function() {
 
         if ($scope.name === "ENABLE") {
             $scope.name = "ENABLED";
+
+            $scope.count += 1
+
             $scope.btnStyle = {
                 "left": "130px",
                 "color": "black",
@@ -31,6 +34,10 @@ myApp.controller("ButtonCtrl", function ButtonCtrl($scope) {
             };
         } else {
             $scope.name = "ENABLE";
+
+            $scope.count -= 1
+
+
             $scope.btnStyle = {
                 "right": "130px",
                 "color": "white",
@@ -54,18 +61,5 @@ myApp.controller("ButtonCtrl", function ButtonCtrl($scope) {
                 "border": "1px solid #00c1ff"
             };
         }
-    };
-});
-
-myApp.controller("CounterCtrl", function CounterCtrl($scope) {
-    var incremented = false;
-    $scope.count = 120;
-
-    $scope.increment = function() {
-        if (incremented) {
-            return;
-        }
-        $scope.count++;
-
     };
 });
