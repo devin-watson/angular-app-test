@@ -1,6 +1,10 @@
 {
   "name": "ento_test",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devin-watson/angular-app-test"
+  },
   "description": "",
   "main": "gulpfile.js",
   "devDependencies": {
